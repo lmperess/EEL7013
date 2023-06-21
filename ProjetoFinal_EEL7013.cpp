@@ -149,8 +149,6 @@ void loop() {
     }
 }
 
-
-// perguntar ao professor sobre o funcionamento desta funcao
 int sensor_morcego(int pinotrig,int pinoecho){ 
   digitalWrite(pinotrig,LOW);
   delayMicroseconds(2);
@@ -159,4 +157,5 @@ int sensor_morcego(int pinotrig,int pinoecho){
   digitalWrite(pinotrig,LOW);
 
   return pulseIn(pinoecho,HIGH)/58;
+  
 }
